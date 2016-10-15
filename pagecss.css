@@ -1,14 +1,15 @@
 .imgr{
-    width: 180px;
-    height: 250px;
+    width: 170px;
+    height: 260px;
     position: inherit;
     align-content: space-between;
     padding: 25px;
+    box-shadow: 0 10px 10px 0 #dc143c;
     
 }
 html, body {
     height: 100%;
-    color: white;
+    color: #dc143c;
 }
 *{
     margin:5;
@@ -25,20 +26,19 @@ p{
 
 .wrapper {
         align-self: flex-start;
-        background-color: crimson;
-        top: 80%;
-        text-align: left; 
-        
-        position: absolute;
-       // height: 50px;
-        min-height:10px ;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        border-radius: 5px;
-        margin-bottom: 10px !important;
+    background-color: white;
+    position: relative;
+    top: -107px;
+    text-align: left;
+    /* height: 50px; */
+    min-height: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px !important;
     width: 100%;
-        font-family: sans-serif;
-    font-size:30px;
+    font-family: sans-serif;
+    font-size: 30px;
     
         
      
@@ -61,3 +61,16 @@ p{
         cursor: progress;
        
     }
+.mainbody{
+    left: 77px;
+    position: relative;
+    top: -115px;
+    z-index: -1;
+}
+.sconscroll{
+    
+
+   position: relative;
+    top: -87px;
+    
+}
