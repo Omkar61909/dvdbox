@@ -24,20 +24,20 @@
                           </div>
                     </div>
                 </li>
-                <li> 
+               <!-- <li> 
                     
                       
-                        <a href="#"><button class="dropbtn">Checkout</button></a>
+                        <a href="movies/checkout.php"><button class="dropbtn">Checkout</button></a>
                         
                     
                 
-                </li>
+                </li>-->
                
 				 <li> 
                     <div class="dropdown">
                    <button class="dropbtn">Hi ! <?php echo $name['fname'];?></button>
 					<div class="dropdown-content">
-						<a href="mywallet.php">My Wallet</a>
+						<a href="movies/mywallet.php">My Wallet</a>
                         <a href="movies/logout.php">Logout</a>
                             </div>
                           </div>
