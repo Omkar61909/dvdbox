@@ -75,6 +75,21 @@
 	<br>
 	<br>
 	<br>
+	<p>Wallet Balance</p>
+	<div class="divradio">
+	<br>
+	<br>	
+	<input type="radio" name="balance" value="200">200
+	<br>
+	
+	<input type="radio" name="balance" value="500">500
+	<br>
+	
+	<input type="radio" name="balance" value="1000">1000
+	</div>
+	<br>
+	<br>
+	<br>
 	<br>
 	
 	<input type="reset" value="Reset Entire Form">
@@ -110,6 +125,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	$email = mysql_real_escape_string($_POST['emailid']);
 	$pass = mysql_real_escape_string($_POST['password']);
 	$repass=mysql_real_escape_string($_POST['repassword']);
+	$balance=$_POST['balance'];
 	$gen=$_POST['gender'];
     $bool = true;
 	
@@ -129,7 +145,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 	if($bool) // checks if bool is true
 	{
-		mysql_query("INSERT INTO reguser (fname,lname,addre,gen,mobno,email,pass) VALUES ('$fname','$lname','$addreg','$gen','$mobno','$email','$pass')"); //Inserts the value to table users
+		mysql_query("INSERT INTO reguser (fname,lname,addre,gen,mobno,email,pass,balance) VALUES ('$fname','$lname','$addreg','$gen','$mobno','$email','$pass','$balance')"); //Inserts the value to table users
 		Print '<script>alert("Successfully Registered! You will be Redirected to Login Page");</script>'; // Prompts the user
 		Print '<script>window.location.assign("login.html");</script>'; // redirects to register.php
 	}

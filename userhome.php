@@ -1,3 +1,5 @@
+<?php include 'test.php'; ?>
+
 <html>
     <head>
     
@@ -30,14 +32,16 @@
                     
                 
                 </li>
-               <li> 
-                    
-                    <a href="register.php"><button class="dropbtn">Register</button></a>        
-                </li>  
-				<li> 
-                    
-                    <a href="login.html"><button class="dropbtn">Login</button></a>        
-                </li> 				
+               
+				 <li> 
+                    <div class="dropdown">
+                   <button class="dropbtn">Hi ! <?php echo $name['fname'];?></button>
+					<div class="dropdown-content">
+						<a href="mywallet.php">My Wallet</a>
+                        <a href="movies/logout.php">Logout</a>
+                            </div>
+                          </div>
+                </li>  				
              </ul>
         </div>
     
@@ -50,7 +54,7 @@
             
         <div class="wrapper">New Movies
             <div class="scrolls">
-                <a href="./movies/aveng.php"><img class="imgr" src="image/avengersoff.jpg" ></a>
+                 <a href="./movies/aveng.php"><img class="imgr" src="image/avengersoff.jpg" ></a>
                 <a href="./movies/cinderella.php">  <img class="imgr" src="image/cinderellaon.jpg" ></a>
                 <a href="./movies/hg.php">  <img class="imgr" src="image/hgon.jpg" ></a>
                 <a href="./movies/cinderella.php">  <img class="imgr" src="image/cinderellaon.jpg" ></a>
@@ -65,7 +69,7 @@
         </div>
             <div class="wrapper sconscroll">Top Movies
             <div class="scrolls">
-                <a href="./movies/aveng.php"> <img class="imgr" src="image/avengersoff.jpg" ></a>
+               <a href="./movies/aveng.php"><img class="imgr" src="image/avengersoff.jpg" ></a>
                 <a href="./movies/cinderella.php">  <img class="imgr" src="image/cinderellaon.jpg" ></a>
                 <a href="./movies/hg.php">  <img class="imgr" src="image/hgon.jpg" ></a>
                 <a href="./movies/cinderella.php">  <img class="imgr" src="image/cinderellaon.jpg" ></a>

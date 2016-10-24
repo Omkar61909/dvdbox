@@ -15,14 +15,14 @@
 		{
 			$table_email = $row['email']; 
 			$table_password = $row['pass'];
-		}
+		
 		if(($emailid == $table_email) && ($password == $table_password)) 
 		{
 				if($password == $table_password)
 				{
 					$_SESSION['user'] = $row['userid']; 
 					
-					header("location: home.php");
+					header("location:userhome.php");
 				}
 				
 		}
@@ -31,7 +31,7 @@
 			Print '<script>alert("Incorrect Password!");</script>'; 
 			Print '<script>window.location.assign("login.html");</script>'; // redirects to login.php
 		}
-
+		}
 	}
 	else
 	{
